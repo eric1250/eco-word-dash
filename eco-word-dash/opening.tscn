@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://di8nis30sqtxt"]
+
+[ext_resource type="Texture2D" uid="uid://dvjd2qnipd3vs" path="res://windows-xp-bliss-wallpaper-thumb.jpg" id="1_hsrnu"]
+[ext_resource type="FontFile" uid="uid://bdv2k5eevdx7l" path="res://Howdy Koala.ttf" id="2_ulneq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Windows-xp-bliss-wallpaper-thumb" type="Sprite2D" parent="."]
+position = Vector2(573.75, 328.75)
+scale = Vector2(2.31552, 2.11774)
+texture = ExtResource("1_hsrnu")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 470.0
+offset_top = 475.0
+offset_right = 678.0
+offset_bottom = 552.0
+theme_override_font_sizes/font_size = 50
+text = "credit"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 363.0
+offset_right = 671.0
+offset_bottom = 440.0
+theme_override_font_sizes/font_size = 50
+text = "start"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 145.0
+offset_right = 1094.0
+offset_bottom = 284.0
+theme_override_colors/font_color = Color(0.989278, 0.872046, 0.10824, 1)
+theme_override_colors/font_shadow_color = Color(0.387496, 0.183466, 0.0744081, 1)
+theme_override_colors/font_outline_color = Color(0.455695, 0.657989, 0.510995, 1)
+theme_override_fonts/font = ExtResource("2_ulneq")
+theme_override_font_sizes/font_size = 100
+text = "eco - word rush"
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = -52.0
+offset_top = 431.0
+offset_right = 108.0
+offset_bottom = 518.0
+theme_override_font_sizes/font_size = 30
+text = "@alpha
+"
