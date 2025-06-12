@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://5x7s73hieaxq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 459.0
+offset_top = 381.0
+offset_right = 667.0
+offset_bottom = 458.0
+theme_override_font_sizes/font_size = 50
+text = "시작하기"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 95.0
+offset_right = 1068.0
+offset_bottom = 234.0
+theme_override_font_sizes/font_size = 100
+text = "영어 단어 맞추기 게임"
