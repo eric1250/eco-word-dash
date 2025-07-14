@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=3 uid="uid://di8nis30sqtxt"]
+
+[ext_resource type="Texture2D" uid="uid://dlqn4kc5xwlvd" path="res://asset/image/opening_bg.jpeg" id="1_kbbr2"]
+[ext_resource type="Script" uid="uid://sq1m7r5l3b2j" path="res://scripts/startbutton.gd" id="2_xv7aw"]
+[ext_resource type="FontFile" uid="uid://bdv2k5eevdx7l" path="res://asset/font/Howdy Koala.ttf" id="3_4k6kw"]
+[ext_resource type="Script" uid="uid://drkshrcv07wd2" path="res://scripts/credit_button.gd" id="3_xv7aw"]
+[ext_resource type="FontFile" uid="uid://bjqsxuqhixjh0" path="res://asset/font/animeace2_reg.ttf" id="4_4k6kw"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576.75, 319.5)
+scale = Vector2(1.25408, 1.25832)
+texture = ExtResource("1_kbbr2")
+
+[node name="start_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 340.0
+offset_right = 678.0
+offset_bottom = 417.0
+theme_override_font_sizes/font_size = 50
+text = "start"
+script = ExtResource("2_xv7aw")
+
+[node name="credit_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 475.0
+offset_right = 678.0
+offset_bottom = 552.0
+theme_override_font_sizes/font_size = 50
+text = "credit"
+script = ExtResource("3_xv7aw")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 576.0
+offset_right = 224.0
+offset_bottom = 663.0
+theme_override_fonts/font = ExtResource("4_4k6kw")
+theme_override_font_sizes/font_size = 30
+text = "@alpha
+"
+
+[node name="title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 145.0
+offset_right = 1094.0
+offset_bottom = 284.0
+theme_override_colors/font_color = Color(0.989278, 0.872046, 0.10824, 1)
+theme_override_colors/font_shadow_color = Color(0.387496, 0.183466, 0.0744081, 1)
+theme_override_colors/font_outline_color = Color(0.455695, 0.657989, 0.510995, 1)
+theme_override_fonts/font = ExtResource("3_4k6kw")
+theme_override_font_sizes/font_size = 100
+text = "eco - word rush"

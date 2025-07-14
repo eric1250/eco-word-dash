@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://ojd0q82cq00u"]
+
+[ext_resource type="Texture2D" uid="uid://qy1508hhp205" path="res://asset/image/ingame_bg.jpg" id="1_oq12a"]
+[ext_resource type="Texture2D" uid="uid://d3w8ghi3ju8kb" path="res://asset/image/heart.png" id="2_b2n85"]
+[ext_resource type="Texture2D" uid="uid://bdlra3j1vghjq" path="res://asset/image/puase.png" id="3_nk5o2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="IngameBg" type="Sprite2D" parent="."]
+position = Vector2(579, 324.75)
+scale = Vector2(1.84026, 1.59926)
+texture = ExtResource("1_oq12a")
+
+[node name="score_label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 117.0
+offset_bottom = 52.0
+
+[node name="Heart" type="Sprite2D" parent="."]
+position = Vector2(891, 70)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_b2n85")
+
+[node name="Heart2" type="Sprite2D" parent="."]
+position = Vector2(984, 70)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_b2n85")
+
+[node name="Heart3" type="Sprite2D" parent="."]
+position = Vector2(1075, 70)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_b2n85")
+
+[node name="Puase" type="Sprite2D" parent="."]
+position = Vector2(79.1, 67.1)
+scale = Vector2(0.0672697, 0.0738487)
+texture = ExtResource("3_nk5o2")
