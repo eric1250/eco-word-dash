@@ -16,12 +16,59 @@ position = Vector2(579, 324.75)
 scale = Vector2(1.84026, 1.59926)
 texture = ExtResource("1_oq12a")
 
-[node name="enemy" parent="." instance=ExtResource("3_r2j0o")]
-position = Vector2(-274, -215)
-
 [node name="score_label" type="Label" parent="."]
 offset_right = 117.0
 offset_bottom = 52.0
+
+[node name="Area2D" parent="score_label" instance=ExtResource("3_r2j0o")]
+position = Vector2(443, 28)
+
+[node name="wall" type="ColorRect" parent="."]
+offset_left = 90.0
+offset_right = 95.0
+offset_bottom = 482.0
+
+[node name="wall" type="ColorRect" parent="wall"]
+layout_mode = 0
+offset_left = 140.0
+offset_right = 145.0
+offset_bottom = 482.0
+
+[node name="wall" type="ColorRect" parent="wall/wall"]
+layout_mode = 0
+offset_left = 140.0
+offset_right = 145.0
+offset_bottom = 482.0
+
+[node name="wall" type="ColorRect" parent="wall/wall/wall"]
+layout_mode = 0
+offset_left = 140.0
+offset_right = 145.0
+offset_bottom = 482.0
+
+[node name="wall" type="ColorRect" parent="wall/wall/wall/wall"]
+layout_mode = 0
+offset_left = 140.0
+offset_right = 145.0
+offset_bottom = 482.0
+
+[node name="wall" type="ColorRect" parent="wall/wall/wall/wall/wall"]
+layout_mode = 0
+offset_left = 140.0
+offset_right = 145.0
+offset_bottom = 482.0
+
+[node name="wall" type="ColorRect" parent="wall/wall/wall/wall/wall/wall"]
+layout_mode = 0
+offset_left = 140.0
+offset_right = 145.0
+offset_bottom = 482.0
+
+[node name="wall" type="ColorRect" parent="wall/wall/wall/wall/wall/wall/wall"]
+layout_mode = 0
+offset_left = 140.0
+offset_right = 145.0
+offset_bottom = 482.0
 
 [node name="Puase" type="Sprite2D" parent="."]
 position = Vector2(79.1, 67.1)
